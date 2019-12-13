@@ -1,42 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import {HashRouter as Router, Route} from 'react-router-dom'
+import Home from './page/Home'
+import List from './page/List'
+import News from './page/News'
+import Profile from './page/Profile'
+import HkLaOut from './components/HkLaout'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
-for(let i=1;i<=10;i++){
- 
-   setTimeout(function(){
-     console.log(i);
-     
-   },1000)
- 
-}
-for(let i=1;i<=10;i++){
-  (function (i) {
-    setTimeout(function(){
-      console.log(i);
-
-    })
-  })(i)
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Router>
+          <Route path='/' exact render={(props)=><HkLaOut><Home></Home></HkLaOut>}></Route>
+          <Route path='/list' exact render={(props)=><HkLaOut><List></List></HkLaOut>}></Route>
+          <Route path='/news' exact render={(props)=><HkLaOut><News></News></HkLaOut>}></Route>
+          <Route path='/profile' exact render={(props)=><HkLaOut><Profile></Profile></HkLaOut>}></Route>
+        </Router>
+      </div>
+    )
+  }
 }
