@@ -1,0 +1,50 @@
+.search_input {
+    display: flex;
+    height: 35px;
+    padding-left:10px;
+    .search_city {
+       background-color:white;
+       flex:7;
+       border-radius:3px;
+       display: flex;
+       padding:5px;
+      .location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        border-right:1px solid #ccc;
+        span {
+  
+        }
+        
+      }
+  
+      .search_inp {
+        padding-left:10px;
+        display: flex;
+        align-items: center;
+        font-size:10px;
+        color:#ccc;
+        flex:1;
+        
+  
+        span {
+            font-size:10px;
+            color:#ccc;
+  
+        }
+      }
+    }
+  
+    .search_map {
+        flex:1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        .icon-map{
+            color:#ccc;
+            font-size:24px;
+        }
+    }
+  }

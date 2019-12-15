@@ -5,9 +5,15 @@ import List from './page/List'
 import News from './page/News'
 import Profile from './page/Profile'
 import HkLaOut from './components/HkLaout'
+import store from './store'
+import {getCityNameAction} from './store/Actions'
 
 
 export default class App extends Component {
+  componentDidMount(){
+    
+   store.dispatch(getCityNameAction('广州市'))
+  }
   render() {
     return (
       <div>

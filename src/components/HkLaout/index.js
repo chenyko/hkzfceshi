@@ -28,7 +28,7 @@ class Index extends Component {
                 this.props.history.push("/");
               }}
             >
-              {this.props.children}
+              {this.props.match.url === '/' && this.props.children}
             </TabBar.Item>
             <TabBar.Item
               icon={
@@ -45,7 +45,7 @@ class Index extends Component {
                 this.props.history.push('/list')
               }}
             >
-              {this.props.children}
+              {this.props.match.url === '/list' && this.props.children}
             </TabBar.Item>
             <TabBar.Item
               icon={
@@ -62,7 +62,7 @@ class Index extends Component {
                 this.props.history.push('/news')
               }}
             >
-              {this.props.children}
+              {this.props.match.url === '/news' && this.props.children}
             </TabBar.Item>
             <TabBar.Item
               icon={<i className='iconfont icon-my'></i>}
@@ -74,7 +74,7 @@ class Index extends Component {
                 this.props.history.push('/profile')
               }}
             >
-                {this.props.children}
+                {this.props.match.url === '/profile' && this.props.children}
             </TabBar.Item>
           
           </TabBar>

@@ -1,0 +1,130 @@
+.hk_home {
+    height: 100%;
+    width:100%;
+    background-color: white;
+    .hk_swipe_list {
+      carousel {
+        img {
+        }
+      }
+    }
+  }
+  .hk_home_nav {
+    display: flex;
+    background-color:white;
+    padding:10px;
+    text-align: center;
+    .nav_item {
+      flex:1;
+      img {
+        margin: 0 auto;
+        width: 80%;
+      }
+    
+    }
+  }
+  .hk_home_group {
+    padding: 10px;
+    background: #f6f5f6;
+    .hk_home_group_title {
+      display: flex;
+      justify-content: space-between;
+      color: #ccc;
+      span:nth-child(1) {
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  
+    .hk_home_group_content {
+      display: flex;
+      flex-wrap: wrap;
+      .group_item {
+        display: flex;
+        background: #fff;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        padding: 10px;
+        width:50%;
+        border: 2px solid #f6f5f6;
+        .group_item_desc {
+          flex: 1;
+          .title {
+            font-weight: 600;
+            font-size:14px;
+            padding:5px;
+          }
+  
+          .info {
+            color:#ccc;
+            font-size: 12px;
+            padding:5px;
+          }
+        }
+  
+        .group_item_img {
+          flex:1;
+          img {
+            width: 60%
+          }
+        }
+      }
+    }
+  }
+  .hk_home_news {
+    background: #fff;
+    .news_title {
+      padding: 5px;
+      span {
+       font-weight: 600;
+       color: black;
+       font-size: 16px
+      }
+    }
+
+    .news_item {
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      .news_item_img {
+        flex: 1;
+        img {
+  
+        }
+      }
+      .news_item_content {
+        display: flex;
+        flex: 6;
+        flex-direction: column;
+        justify-content: space-between;
+        .news_item_content_title {
+          text-align: center;
+          font-weight: 600;
+          color:black;
+          span {
+  
+          }
+        }
+  
+        .news_item_content_bottom {
+          display: flex;
+          padding: 5px;
+          justify-content: space-between;
+          font-size:12px;
+          color:#ccc;
+          span {
+  
+          }
+        }
+      }
+    }
+  }
+  .hk_search_input{
+    position: fixed;
+    top:20px;
+    left:10px;
+    width:100%;
+    z-index:100;
+  }
